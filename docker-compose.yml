@@ -1,0 +1,7 @@
+version: '3'
+services: 
+    conda:
+        build:
+            context: .
+        working_dir: /home/appuser
+        command: bash -c "conda run -n env python run.py"
